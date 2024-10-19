@@ -2,10 +2,12 @@
 function sliderButtonclick(event){
     event.preventDefault()
     
-    const buton = event.target
+    const buton = event.target.tagName === "IMG" ? event.target.parentElement : event.target
     const cardViseble = document.querySelector(".card-active")
     let newCardViseble = null
     let direction = null
+
+    console.log(buton.id, buton)
 
     if(buton.id === "pass-button"){
        newCardViseble = cardViseble.nextElementSibling
@@ -68,6 +70,8 @@ function slider(){
     
     const event = new Event('click');
     let sliderButtons = document.querySelectorAll(".slider-buttons")
+
+    console.log(sliderButtons[sliderButtons.length-1])
 
    
     setInterval( () => {
