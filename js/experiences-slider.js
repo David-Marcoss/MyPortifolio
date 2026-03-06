@@ -76,7 +76,7 @@ function slider(){
    
     setInterval( () => {
         sliderButtons[sliderButtons.length-1].dispatchEvent(event)
-    },6000)
+    },12000)
 
 }
 
