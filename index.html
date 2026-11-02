@@ -117,126 +117,182 @@
             </div>
         </section>
 
-        <section class="experiences" id="experiences">
-            <h2 class="section-title">Experiências</h2>
-            <div class="experiences-content">
-                <a href="http://" class="slider-buttons" id="back-button">
-                    <img src="img/icons/icon-voltar.png" alt="">
-                </a>
+        <section class="experiences" id="experiences" aria-labelledby="experiences-title">
+            <h2 class="section-title" id="experiences-title">Experiências</h2>
+            <p class="experiences-intro">Minha trajetória profissional, projetos e principais contribuições ao longo do tempo.</p>
+            <ol class="experience-timeline">
+                <li class="timeline-item">
+                    <p class="experience-date">Jan 2025 - Atualmente</p>
+                    <article class="experience-card experience-card-current">
+                        <header class="experience-identity">
+                            <div class="card-img">
+                                <img loading="lazy" src="img/experiencias-wopus.jpeg" alt="Wopus">
+                            </div>
 
-                <div class="experiences-card card-active">
-                    <div class="card-header">
-                        <div class="card-img">
-                            <img src="img/experiencias-wopus.jpeg" alt="">
+                            <div class="card-infos">
+                                <h3>Desenvolvedor Fullstack</h3>
+                                <h3>Wopus</h3>
+                            </div>
+                        </header>
+
+                        <div class="experience-details">
+                            <h3>Principais atividades e contribuições</h3>
+                            <ul>
+                                <li>Atuação no desenvolvimento de aplicações web e sistemas <strong>SaaS</strong>,
+                                    participando da construção de novos projetos e evolução de soluções existentes.</li>
+                                <li>Responsável pela estruturação inicial do front-end e back-end do
+                                    <strong>WorkObras</strong>, plataforma de gestão de obras com aproximadamente
+                                    <strong>125 módulos funcionais</strong>.</li>
+                                <li>Desenvolvimento de funcionalidades complexas envolvendo processos de compras,
+                                    orçamentos, medições contratuais, gestão financeira e controle de permissões.</li>
+                                <li>Implementação de integração com <strong>Stripe</strong> para gerenciamento de
+                                    assinaturas, processamento de webhooks e controle de acesso conforme os planos
+                                    contratados.</li>
+                                <li>Manutenção e evolução do sistema <strong>Thoreb</strong> utilizando
+                                    <strong>Rust e Angular</strong>, realizando refatorações, otimizações e implementação
+                                    de recursos para melhorar a produtividade dos usuários.</li>
+                                <li>Desenvolvimento de interfaces responsivas, <strong>APIs REST</strong> e
+                                    <strong>testes automatizados</strong>, contribuindo para a qualidade e manutenção
+                                    das aplicações.</li>
+                            </ul>
                         </div>
-
-                        <div class="card-infos">
-                            <h3>Desenvolvedor Fullstack</h3>
-                            <h3>Wopus</h3>
-                            <span>Jan 2025 - Atualmente</span>
-                        </div>
-                    </div>
-
-                    <div class="card-body">
-                        <h3>Atividades desenvolvidas</h3>
-                        <ul>
-                            <li>Desenvolvimento de aplicação web WorkObras para gestão de obras e processos de
-                                engenharia,
-                                focada em eficiência, usabilidade e escalabilidade.</li>
-                            <li>Estruturação do projeto desde o início, aplicando boas práticas de arquitetura e
-                                organização de
-                                código.</li>
-                            <li>Implementação do back-end com Nest.js e Prisma ORM, garantindo desempenho e
-                                manutenibilidade.</li>
-                            <li>Desenvolvimento de interfaces responsivas com React.js, Tailwind CSS e shadcn/ui.</li>
+                        <ul class="experience-technologies" aria-label="Tecnologias utilizadas">
+                            <li>NestJS</li>
+                            <li>React</li>
+                            <li>TypeScript</li>
+                            <li>Rust</li>
+                            <li>Angular</li>
+                            <li>PostgreSQL</li>
+                            <li>Stripe</li>
                         </ul>
-                    </div>
-                </div>
+                    </article>
+                </li>
+                <li class="timeline-item">
+                    <p class="experience-date">Agosto 2024 - Dezembro de 2024</p>
+                    <article class="experience-card">
+                        <header class="experience-identity">
+                            <div class="card-img">
+                                <img loading="lazy" src="img/experiencias-x-software.png" alt="X Software House">
+                            </div>
 
-                <div class="experiences-card card">
-                    <div class="card-header">
-                        <div class="card-img">
-                            <img src="img/experiencias-x-software.png" alt="">
+                            <div class="card-infos">
+                                <h3>Desenvolvedor Fullstack Junior</h3>
+                                <h3>X Software House</h3>
+                            </div>
+                        </header>
+
+                        <div class="experience-details">
+                            <h3>Principais atividades e contribuições</h3>
+                            <ul>
+                                <li>Participação no desenvolvimento da plataforma <strong>Coypei</strong>, aplicação web
+                                    voltada à clonagem, personalização e edição dinâmica de landing pages.</li>
+                                <li>Desenvolvimento de interfaces responsivas e funcionalidades interativas utilizando
+                                    <strong>React.js, JavaScript, HTML e CSS</strong>.</li>
+                                <li>Implementação de recursos de edição dinâmica de páginas, incluindo
+                                    <strong>manipulação do DOM</strong> e personalização de elementos visuais.</li>
+                                <li>Desenvolvimento e manutenção de funcionalidades back-end e <strong>APIs REST</strong>
+                                    utilizando <strong>Node.js, TypeScript e Express.js</strong>.</li>
+                                <li>Modelagem e manipulação de dados com <strong>PostgreSQL</strong>, além da correção de
+                                    problemas e evolução de funcionalidades da aplicação.</li>
+                            </ul>
                         </div>
-
-                        <div class="card-infos">
-                            <h3>Desenvolvedor Fullstack Junior</h3>
-                            <h3>X Software House</h3>
-                            <span>Agosto 2024 - Dezembro de 2024</span>
-                        </div>
-                    </div>
-
-                    <div class="card-body">
-                        <h3>Atividades desenvolvidas</h3>
-                        <ul>
-                            <li>Desenvolvimento de software sob demanda.</li>
-                            <li>Desenvolvimento de aplicações web.</li>
-                            <li>Desenvolvimento de interfaces responsivas com React.js</li>
-                            <li>Desenvolvimento e manutenção de APIs utilizando JavaScript e Typescript.</li>
-                            <li>Modelagem e manipulação de Banco de dados com PostgreSQL.</li>
+                        <ul class="experience-technologies" aria-label="Tecnologias utilizadas">
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>Express</li>
+                            <li>TypeScript</li>
+                            <li>PostgreSQL</li>
                         </ul>
-                    </div>
-                </div>
+                    </article>
+                </li>
+                <li class="timeline-item">
+                    <p class="experience-date">Setembro 2023 - Abril 2024</p>
+                    <article class="experience-card">
+                        <header class="experience-identity">
+                            <div class="card-img">
+                                <img loading="lazy" src="img/experiencias-FG.png" alt="Fábrica de Gênios">
+                            </div>
 
-                <div class="experiences-card card">
-                    <div class="card-header">
-                        <div class="card-img">
-                            <img src="img/experiencias-FG.png" alt="">
+                            <div class="card-infos">
+                                <h3>Estagiário back-end Django</h3>
+                                <h3>Fábrica de Gênios</h3>
+                            </div>
+                        </header>
+
+                        <div class="experience-details">
+                            <h3>Principais atividades e contribuições</h3>
+                            <ul>
+                                <li>Participação no desenvolvimento e manutenção de uma plataforma de recrutamento
+                                    e seleção de candidatos, atuando principalmente no back-end com <strong>Python
+                                    e Django</strong>.</li>
+                                <li>Implementação de funcionalidades para avaliação de candidatos, incluindo um
+                                    <strong>sistema de testes com perguntas e respostas</strong>.</li>
+                                <li>Desenvolvimento e manutenção de <strong>APIs REST</strong> utilizando
+                                    <strong>Django REST Framework</strong>, além do primeiro contato profissional
+                                    com <strong>JavaScript e NestJS</strong>.</li>
+                                <li>Modelagem e manipulação de dados com <strong>PostgreSQL</strong>,
+                                    implementação de <strong>testes automatizados</strong> e versionamento de
+                                    código com <strong>Git</strong>.</li>
+                                <li>Colaboração com a equipe utilizando metodologias ágeis
+                                    (<strong>Scrum</strong>), participando do planejamento, desenvolvimento e
+                                    entrega de funcionalidades.</li>
+                            </ul>
                         </div>
-
-                        <div class="card-infos">
-                            <h3>Estagiário back-end Django</h3>
-                            <h3>Fábrica de Gênios</h3>
-                            <span>Setembro 2023 - Abril 2024</span>
-                        </div>
-                    </div>
-
-                    <div class="card-body">
-                        <h3>Atividades desenvolvidas</h3>
-                        <ul>
-                            <li>Desenvolvimento e manutenção de APIs utilizando Python com Django e JavaScript via
-                                NestJS.</li>
-                            <li>Modelagem e manipulação de dados usando Banco de dados PostgreSQL.</li>
-                            <li>Desenvolvimento de testes unitários .</li>
-                            <li>Versionamento de código utilizando Git e GitHub.</li>
-                            <li>Uso da metodologia Scrum para planejamento e entrega de demandas.</li>
+                        <ul class="experience-technologies" aria-label="Tecnologias utilizadas">
+                            <li>Python</li>
+                            <li>Django</li>
+                            <li>DRF</li>
+                            <li>NestJS</li>
+                            <li>PostgreSQL</li>
                         </ul>
-                    </div>
-                </div>
+                    </article>
+                </li>
+                <li class="timeline-item">
+                    <p class="experience-date">Setembro 2022 - Agosto 2023</p>
+                    <article class="experience-card">
+                        <header class="experience-identity">
+                            <div class="card-img">
+                                <img loading="lazy" src="img/experiencias-cnpq.png" alt="CNPq">
+                            </div>
 
-                <div class="experiences-card">
-                    <div class="card-header">
-                        <div class="card-img">
-                            <img src="img/experiencias-cnpq.png" alt="">
+                            <div class="card-infos">
+                                <h3>Pesquisador Bolsista de Iniciação Científica</h3>
+                                <h3>CNPq - UFPI </h3>
+                            </div>
+                        </header>
+
+                        <div class="experience-details">
+                            <h3>Principais atividades e contribuições</h3>
+                            <ul>
+                                <li>Desenvolvimento de uma aplicação baseada em <strong>microsserviços e
+                                    arquitetura serverless</strong>, distribuída entre <strong>AWS, Microsoft
+                                    Azure e Google Cloud (GCP)</strong>.</li>
+                                <li>Implementação de funções serverless e APIs utilizando <strong>AWS Lambda,
+                                    Azure Functions, Google Cloud Functions e API Gateway</strong>.</li>
+                                <li>Modelagem e integração de bancos de dados <strong>NoSQL</strong>, incluindo
+                                    <strong>DynamoDB, Cosmos DB e Firebase</strong>.</li>
+                                <li>Planejamento e execução de <strong>testes de carga e desempenho</strong> com
+                                    <strong>Apache JMeter</strong>, avaliando latência, tempo de resposta e
+                                    comportamento das aplicações.</li>
+                                <li>Coleta e análise de métricas de desempenho utilizando ferramentas de
+                                    monitoramento em nuvem, <strong>Python, Pandas e NumPy</strong>.</li>
+                                <li>Investigação dos impactos da <strong>arquitetura multicloud</strong> no
+                                    desempenho de aplicações serverless, identificando aumento de latência na
+                                    comunicação entre serviços distribuídos.</li>
+                            </ul>
                         </div>
-
-                        <div class="card-infos">
-                            <h3>Pesquisador Bolsista de Iniciação Científica</h3>
-                            <h3>CNPq - UFPI </h3>
-                            <span>Setembro 2022 - Agosto 2023</span>
-                        </div>
-                    </div>
-
-                    <div class="card-body">
-                        <h3>Atividades desenvolvidas</h3>
-                        <ul>
-                            <li>Desenvolvimento de microsserviços distribuídos em provedores de nuvem como AWS, Azure e
-                                GPC.</li>
-                            <li>Implementação de funções serverless.</li>
-                            <li>Modelagem e implementação de APIs via API Gateway.</li>
-                            <li>Modelagem e gestão de bancos de dados NoSQL.</li>
-                            <li>Elaboração de testes de stress utilizando Jmeter.</li>
-                            <li>Coleta e análise de dados de desempenho das aplicações</li>
-                            <li>Análises de dados com Python, Pandas e Numpy.</li>
+                        <ul class="experience-technologies" aria-label="Tecnologias utilizadas">
+                            <li>AWS</li>
+                            <li>Azure</li>
+                            <li>GCP</li>
+                            <li>Serverless</li>
+                            <li>JMeter</li>
+                            <li>Python</li>
+                            <li>Pandas</li>
                         </ul>
-
-                    </div>
-                </div>
-
-                <a href="http://" class="slider-buttons" id="pass-button">
-                    <img src="img/icons/icon-avançar.png" alt="">
-                </a>
-            </div>
+                    </article>
+                </li>
+            </ol>
         </section>
 
 
@@ -559,7 +615,7 @@
     </footer>
 
     <script src="js/banner-typewriter.js"></script>
-    <script src="js/experiences-slider.js"></script>
+    <script src="js/experiences-timeline.js"></script>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T84P66HG" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
