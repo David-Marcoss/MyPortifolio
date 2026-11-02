@@ -110,6 +110,19 @@ body {
   color: #39c4b6;
 }
 
+.banner-typewriter .typing-character {
+  color: inherit;
+  visibility: hidden;
+}
+
+.banner-typewriter .typing-character.is-visible {
+  visibility: visible;
+}
+
+.banner-typewriter .typing-character.is-cursor {
+  box-shadow: 2px 0 currentColor;
+}
+
 .banner-buttons {
   margin: 20px 0px;
 }
